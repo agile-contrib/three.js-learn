@@ -1,0 +1,21 @@
+{
+  "name": "three.js-learn",
+  "version": "0.1.0",
+  "description": "three.js学习代码笔记",
+  "scripts": {
+    "dev": "node ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agile-contrib/three.js-learn.git"
+  },
+  "author": "你好2007",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agile-contrib/three.js-learn/issues"
+  },
+  "homepage": "https://github.com/agile-contrib/three.js-learn#readme",
+  "devDependencies": {
+    "@etcpack/ws": "^0.2.1"
+  }
+}
