@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>旋转的几何体</title>
+    <title>鼠标操作</title>
     <style>
         body {
             margin: 0;
         }
     </style>
-    <script src="../libs/three.js"></script>
+    <script src="./libs/three.js"></script>
+    <script src="./libs/OrbitControls.js"></script>
 </head>
 
 <body>
@@ -71,12 +72,12 @@
             //执行渲染操作   指定场景、相机作为参数
             renderer.render(scene, camera);
 
-            mesh.rotateY(0.01);//每次绕y轴旋转0.01弧度
-            requestAnimationFrame(render);//请求再次执行渲染函数render
-
         }
 
         render();
+
+        var controls = new THREE.OrbitControls(camera, renderer.domElement);//创建控件对象
+        controls.addEventListener('change', render);//监听鼠标、键盘事件
 
     </script>
 </body>
